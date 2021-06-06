@@ -33,7 +33,7 @@ const useStyles = makeStyles({
         marginBottom: 25
     },
     media: {
-        height: "150px",
+        
         "&:hover": {
             
         }
@@ -45,6 +45,8 @@ const useStyles = makeStyles({
             color: "#3f51b5",
             transition: ".5s ease"
           }
+          },
+          card__img: {
     }
     
 });
@@ -60,7 +62,7 @@ const Cards = (props) => {
         <>
         <Card className={classes.card}>
             <CardMedia className={classes.media}>
-                <img src={imageUrl} alt="img" className='card__img' />
+                <img src={imageUrl} alt="img" className='card__img' height={"200px"} width={"100%"} />
                 </CardMedia>
             
             <CardContent>
